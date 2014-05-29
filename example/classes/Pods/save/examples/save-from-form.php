@@ -12,7 +12,7 @@ $id = $_POST[ 'item_id' ];
 //create array of data to be added
 //You can add additional fields here if you want
 $data = array(
-	'image_field'  => $img ,
+	'image_field'  => pods_attachment_import($img) ,
 );
 //get pods object for item of ID $id
 $pod = pods( 'pod_name', $id );
